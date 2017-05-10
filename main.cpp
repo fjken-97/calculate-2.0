@@ -36,21 +36,21 @@ void choice()
 	
 	file<<"******************************************************************************"<<endl<<endl;
 	
-	cout<<"      ½ñÌìÄãË¢ÌâÁËÂğ£¿¸Ï¿ì¶¯¶¯ÄãµÄĞ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl; 
+	cout<<"      ä»Šå¤©ä½ åˆ·é¢˜äº†å—ï¼Ÿèµ¶å¿«åŠ¨åŠ¨ä½ çš„å°æ‰‹ï¼Œç†Ÿç»ƒä¸€ä¸‹å§ï¼    "<<endl<<endl; 
 	
-	file<<"      ½ñÌìÄãË¢ÌâÁËÂğ£¿¸Ï¿ì¶¯¶¯ÄãµÄĞ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl;
+	file<<"      ä»Šå¤©ä½ åˆ·é¢˜äº†å—ï¼Ÿèµ¶å¿«åŠ¨åŠ¨ä½ çš„å°æ‰‹ï¼Œç†Ÿç»ƒä¸€ä¸‹å§ï¼    "<<endl<<endl;
 	
 	cout<<"******************************************************************************"<<endl<<endl;
 	
 	file<<"******************************************************************************"<<endl<<endl;
 	
-	cout<<"[1] - ÇëÑ¡ÔñÄãËùĞèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
+	cout<<"[1] - è¯·é€‰æ‹©ä½ æ‰€éœ€è¦çš„è¯­è¨€ ( Please choose the language that you need ) :"<<endl<<endl;
 	
-	file<<"[1] - ÇëÑ¡ÔñÄãËùĞèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
+	file<<"[1] - è¯·é€‰æ‹©ä½ æ‰€éœ€è¦çš„è¯­è¨€ ( Please choose the language that you need ) :"<<endl<<endl;
 	
-	cout<<"      a.¼òÌåÖĞÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;          //ÊµÏÖ2ÖÖÓïÑÔµÄÇĞ»»     
+	cout<<"      a.ç®€ä½“ä¸­æ–‡ ;  b.è‹±æ–‡ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;          //å®ç°2ç§è¯­è¨€çš„åˆ‡æ¢     
 	
-	file<<"      a.¼òÌåÖĞÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;    
+	file<<"      a.ç®€ä½“ä¸­æ–‡ ;  b.è‹±æ–‡ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;    
 	
 	int i;
 
@@ -78,8 +78,8 @@ void choice()
 		if(choise=='a')
 
 	        {
-				cout<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êı(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌĞò)£º"<<endl<<endl;
-				file<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êı(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌĞò)£º"<<endl<<endl;
+				cout<<"[2] - è¯·è¾“å…¥ä½ æ‰€æƒ³è¦çš„é¢˜ç›®æ•°(ä½ å¯ä»¥è¾“å…¥'e'åˆ™ç»“æŸç¨‹åº)ï¼š"<<endl<<endl;
+				file<<"[2] - è¯·è¾“å…¥ä½ æ‰€æƒ³è¦çš„é¢˜ç›®æ•°(ä½ å¯ä»¥è¾“å…¥'e'åˆ™ç»“æŸç¨‹åº)ï¼š"<<endl<<endl;
 				break;
 			}
 
@@ -94,8 +94,8 @@ void choice()
 		else
 
 		    {
-				cout<<"[2] - ÊäÈë²»µ±£¬ÇëÖØĞÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
-				file<<"[2] - ÊäÈë²»µ±£¬ÇëÖØĞÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
+				cout<<"[2] - è¾“å…¥ä¸å½“ï¼Œè¯·é‡æ–°é€‰æ‹©é€‰é¡¹/Please select the option again if it is wrong"<<endl<<endl;
+				file<<"[2] - è¾“å…¥ä¸å½“ï¼Œè¯·é‡æ–°é€‰æ‹©é€‰é¡¹/Please select the option again if it is wrong"<<endl<<endl;
 				continue;
 			}
 		    
@@ -124,9 +124,9 @@ void scan(int n)
 	
 	if(choise=='a')
 	{
-		cout<<"[3] - ÇëÔÚÏÂÁĞµÈÊ½ºóÊäÈëÄãÈÏÎªÕıÈ·µÄ´ğ°¸£º"<<endl<<endl;
+		cout<<"[3] - è¯·åœ¨ä¸‹åˆ—ç­‰å¼åè¾“å…¥ä½ è®¤ä¸ºæ­£ç¡®çš„ç­”æ¡ˆï¼š"<<endl<<endl;
 		
-		file<<"[3] - ÇëÔÚÏÂÁĞµÈÊ½ºóÊäÈëÄãÈÏÎªÕıÈ·µÄ´ğ°¸£º"<<endl<<endl;
+		file<<"[3] - è¯·åœ¨ä¸‹åˆ—ç­‰å¼åè¾“å…¥ä½ è®¤ä¸ºæ­£ç¡®çš„ç­”æ¡ˆï¼š"<<endl<<endl;
 	}
 	
 	
@@ -144,13 +144,13 @@ void scan(int n)
 
 int randomNumber()
 {
-	int d;            //d´ú±íµÚÊı×Ö
+	int d;            //dä»£è¡¨ç¬¬æ•°å­—
 
-	//srand((unsigned)time(NULL));             //Õâ¸öÊÇËæ»úº¯ÊıµÄ¹Ø¼ü£¬ÊµÏÖËæ»úÉú³ÉÊı×Ö 
+	//srand((unsigned)time(NULL));             //è¿™ä¸ªæ˜¯éšæœºå‡½æ•°çš„å…³é”®ï¼Œå®ç°éšæœºç”Ÿæˆæ•°å­— 
 
 	d=rand()%10+1;                       
 	
-	return d;			//´«³ö1~10Ö®¼äµÄÄ³Ò»Ëæ»úÊı
+	return d;			//ä¼ å‡º1~10ä¹‹é—´çš„æŸä¸€éšæœºæ•°
 
 }
 
@@ -178,7 +178,7 @@ string randomOperation()
 	return sym;
 }
 
-string Int_str(int n) 			//½«intÀàĞÍµÄÊı×Ö×ª»»Îª×Ö·ûĞÍ
+string Int_str(int n) 			//å°†intç±»å‹çš„æ•°å­—è½¬æ¢ä¸ºå­—ç¬¦å‹
 {         
 
 	char str[100];
@@ -188,7 +188,7 @@ string Int_str(int n) 			//½«intÀàĞÍµÄÊı×Ö×ª»»Îª×Ö·ûĞÍ
 	return str;
 }
 
-void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàĞÍ 
+void generateExpression()		//kä¸ºéšæœºé€‰å–é¢˜ç›®ç±»å‹ 
 {
   fstream file;
 	
@@ -207,12 +207,12 @@ void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàĞÍ
 	
 	for(i=0;i<=3;i++)
 	{
-		number[i]=randomNumber();		//ÓÃÓÚËæ»úÉú³ÉÊı×Ö
+		number[i]=randomNumber();		//ç”¨äºéšæœºç”Ÿæˆæ•°å­—
 	}
 	
 	for(j=0;j<=2;j++)
 	{
-		sign[j]=randomOperation();		//ÓÃÓÚËæ»úÉú³ÉÔËËã·û
+		sign[j]=randomOperation();		//ç”¨äºéšæœºç”Ÿæˆè¿ç®—ç¬¦
 	} 
 	
 	equation="";
@@ -288,7 +288,7 @@ void checkanswer(string res,string ans)
 	//cout<<count; 
 }
 
-void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½ 
+void transform(string infix,char postfix[])     //ä¸­ç¼€è¡¨è¾¾å¼è½¬ä¸ºåç¼€è¡¨è¾¾å¼ 
 {
     stack <char> sign;
     
@@ -296,7 +296,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
     
 	while (i<infix.size())
     {
-      	if ((infix[i]>='0')&&(infix[i]<='9'))      //ÅĞ¶ÏÊı×Ö 
+      	if ((infix[i]>='0')&&(infix[i]<='9'))      //åˆ¤æ–­æ•°å­— 
         {
             while ((infix[i]>='0')&&(infix[i]<='9'))
 
@@ -305,10 +305,10 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
                     i++;
                     j++;
             }
-            postfix[j]='!'; //±êÊ¶µ¥¸öÕûÊı£¬ÎªÁË²»Ê¹µÃÊı×Ö»ìÅÅÎŞ·¨Ò»Ò»Ê¶±ğ 
+            postfix[j]='!'; //æ ‡è¯†å•ä¸ªæ•´æ•°ï¼Œä¸ºäº†ä¸ä½¿å¾—æ•°å­—æ··æ’æ— æ³•ä¸€ä¸€è¯†åˆ« 
             j++;
         }
-		if ((infix[i]=='+')||(infix[i]=='-')) //ÅĞ¶Ï'+'¡¢'-' 
+		if ((infix[i]=='+')||(infix[i]=='-')) //åˆ¤æ–­'+'ã€'-' 
         {
             
             while (!sign.empty()&&(sign.top()!= '('))
@@ -322,7 +322,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
             sign.push(infix[i]);
 
         }
-        if (infix[i]=='*'||infix[i]=='/')   //ÅĞ¶Ï'*'¡¢'/' 
+        if (infix[i]=='*'||infix[i]=='/')   //åˆ¤æ–­'*'ã€'/' 
         {
             
             while ((!sign.empty())&&(sign.top()!= '(')&&((sign.top()=='*')||(sign.top()=='/')))
@@ -336,9 +336,9 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 	  
 		if (infix[i] == '(') 
 	
-		sign.push(infix[i]); //ÅĞ¶Ï'(' 
+		sign.push(infix[i]); //åˆ¤æ–­'(' 
 	
-		if (infix[i] == ')') //ÅĞ¶Ï')' 
+		if (infix[i] == ')') //åˆ¤æ–­')' 
 
 		{
 
@@ -361,7 +361,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 	}
 		
    
-    while(!sign.empty())    //×ª³ö·ûºÅÕ»ÖĞÊ£ÓàµÄÔËËã·û  
+    while(!sign.empty())    //è½¬å‡ºç¬¦å·æ ˆä¸­å‰©ä½™çš„è¿ç®—ç¬¦  
     {
         
         postfix[j]=sign.top();
@@ -370,12 +370,12 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
         
 		sign.pop();
     }
-    postfix[j]='\0';     //²¹ÉÏÒ»¸öÖÕÖ¹·û 
+    postfix[j]='\0';     //è¡¥ä¸Šä¸€ä¸ªç»ˆæ­¢ç¬¦ 
 }
 
-int figure[100];  // ¿ªÒ»¸ö´æ·ÅÔËËã²Ù×÷µÄÊıÕ» 
+int figure[100];  // å¼€ä¸€ä¸ªå­˜æ”¾è¿ç®—æ“ä½œçš„æ•°æ ˆ 
 
-string calculateResult(string infix)     //¼ÆËãºó×º±í´ïÊ½µÄÖµ ²¢ÇÒ ¼ÆËãÉú³ÉµÄÔËËãÊ½µÄ½á¹û
+string calculateResult(string infix)     //è®¡ç®—åç¼€è¡¨è¾¾å¼çš„å€¼ å¹¶ä¸” è®¡ç®—ç”Ÿæˆçš„è¿ç®—å¼çš„ç»“æœ
 {
     int i=0,point=-1;
 
@@ -420,7 +420,8 @@ string calculateResult(string infix)     //¼ÆËãºó×º±í´ïÊ½µÄÖµ ²¢ÇÒ ¼ÆËãÉú³ÉµÄÔËË
 					}*/	
 				figure[point]=(figure[point]/figure[point+1]);break;
 			}	
-        }
+
+	}
     }
     
 	i++;
@@ -451,13 +452,13 @@ void print(int count)
 	
 	file<<"******************************************************************************"<<endl<<endl;
 	
-	cout<<"[4] - ÄúÕıÈ·»Ø´ğµÄÌâÊıÎª : "<<count<<endl<<endl;
+	cout<<"[4] - æ‚¨æ­£ç¡®å›ç­”çš„é¢˜æ•°ä¸º : "<<count<<endl<<endl;
 	
-	file<<"[4] - ÄúÕıÈ·»Ø´ğµÄÌâÊıÎª : "<<count<<endl<<endl;
+	file<<"[4] - æ‚¨æ­£ç¡®å›ç­”çš„é¢˜æ•°ä¸º : "<<count<<endl<<endl;
 
-	cout<<"    - ÔÙ½ÓÔÙÀø£¬ÆÚ´ıÄãÏÂ´Î¸üºÃµÄ±íÏÖ£¡"<<endl<<endl; 
+	cout<<"    - å†æ¥å†åŠ±ï¼ŒæœŸå¾…ä½ ä¸‹æ¬¡æ›´å¥½çš„è¡¨ç°ï¼"<<endl<<endl; 
 	
-	file<<"    - ÔÙ½ÓÔÙÀø£¬ÆÚ´ıÄãÏÂ´Î¸üºÃµÄ±íÏÖ£¡"<<endl<<endl;
+	file<<"    - å†æ¥å†åŠ±ï¼ŒæœŸå¾…ä½ ä¸‹æ¬¡æ›´å¥½çš„è¡¨ç°ï¼"<<endl<<endl;
 	
 	file.close();
 	
@@ -465,11 +466,22 @@ void print(int count)
 
 int main(int argc,char *argv[])
 {
-	srand((unsigned)time(NULL));		
+	srand((unsigned)time(NULL));
+	fstream file;
+    
+	file.open(argv[1],ios::in);
+    
+	file>>n;      //å®ç°æ–‡ä»¶å†…æ•°æ®ï¼ˆé¢˜æ•°ï¼‰çš„è¯»å…¥      
+    
+	file.close();
+	
 	choice();	
-	scan(n);    //¸Ãº¯ÊıÓÃÓÚÓëÓÃ»§½»»¥£¬»ñÈ¡ÊäÈëÊı¾İ	 
-	generateExpression();   //ÓÃÓÚÉú³ÉÔËËãÊ½
-    print(count);    //½«Í³¼Æ½á¹ûÊä³ö¸øÓÃ»§	
+	
+	scan(n);    //è¯¥å‡½æ•°ç”¨äºä¸ç”¨æˆ·äº¤äº’ï¼Œè·å–è¾“å…¥æ•°æ®	 
+	
+	generateExpression();   //ç”¨äºç”Ÿæˆè¿ç®—å¼
+    
+	print(count);    //å°†ç»Ÿè®¡ç»“æœè¾“å‡ºç»™ç”¨æˆ·	
 return 0;
 
 }
