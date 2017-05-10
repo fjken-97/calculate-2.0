@@ -9,12 +9,11 @@
 #include <fstream>
 #include <vector>
 #include <stdlib.h>
+#include<sstream>
 
 using namespace std;
 
-string equation,answer,last,result;
-
-char choice;
+string equation,answer,Last,result,numerator, denominator,numerators, denominators;
 
 int n,i,j,count=0;
 
@@ -22,18 +21,36 @@ void checkanswer(string res,string ans);
 
 string calculateResult(string infix);
 
-void choise()
+
+char choise;
+
+void choice()
 {
 
+	fstream file;
+	
+	file.open("out.txt",ios::app);
+	
+	//file1.close();
 	cout<<"******************************************************************************"<<endl<<endl;
+	
+	file<<"******************************************************************************"<<endl<<endl;
 	
 	cout<<"      ½ñÌìÄãË¢ÌâÁËÂð£¿¸Ï¿ì¶¯¶¯ÄãµÄÐ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl; 
 	
+	file<<"      ½ñÌìÄãË¢ÌâÁËÂð£¿¸Ï¿ì¶¯¶¯ÄãµÄÐ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl;
+	
 	cout<<"******************************************************************************"<<endl<<endl;
+	
+	file<<"******************************************************************************"<<endl<<endl;
 	
 	cout<<"[1] - ÇëÑ¡ÔñÄãËùÐèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
 	
+	file<<"[1] - ÇëÑ¡ÔñÄãËùÐèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
+	
 	cout<<"      a.¼òÌåÖÐÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;          //ÊµÏÖ2ÖÖÓïÑÔµÄÇÐ»»     
+	
+	file<<"      a.¼òÌåÖÐÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;    
 	
 	int i;
 
@@ -43,49 +60,86 @@ void choise()
 	{
 		cout<<"    - ";
 		
-		cin>>choice;
+		file<<"    - ";
+		
+		cin>>choise;
+		
+		file<<choise;
 		
 		cout<<endl;
 
+		file<<endl;
+		
 	    cout<<"******************************************************************************"<<endl<<endl;	
 		
-		if(choice=='a')
+		file<<"******************************************************************************"<<endl<<endl;
+		
+		
+		if(choise=='a')
 
-	        {cout<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êý(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌÐò)£º"<<endl<<endl;break;}
+	        {
+				cout<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êý(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌÐò)£º"<<endl<<endl;
+				file<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êý(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌÐò)£º"<<endl<<endl;
+				break;
+			}
 
-	    else if(choice=='b') 
+	    else if(choise=='b') 
 
-		    {cout<<"[2] - Please enter the number of texts you want(You can enter'e'to end the program):"<<endl<<endl;break;}
+		    {
+				cout<<"[2] - Please enter the number of texts you want(You can enter'e'to end the program):"<<endl<<endl;
+				file<<"[2] - Please enter the number of texts you want(You can enter'e'to end the program):"<<endl<<endl;
+				break;
+			}
 
 		else
 
-		    {cout<<"[2] - ÊäÈë²»µ±£¬ÇëÖØÐÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;continue;}
+		    {
+				cout<<"[2] - ÊäÈë²»µ±£¬ÇëÖØÐÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
+				file<<"[2] - ÊäÈë²»µ±£¬ÇëÖØÐÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
+				continue;
+			}
 		    
 	}
+	file.close();
 
 }
 
-void scan()
+void scan(int n)
 {
+	fstream file;
 	
-	choise();
+	file.open("out.txt",ios::app);
 	
 	cout<<"    - ";
 	
-	cin>>n;
+	file<<"    - ";
 	
 	cout<<endl;
 	
+	file<<endl;
+	
 	cout<<"******************************************************************************"<<endl<<endl;	
 	
-	if(choice=='a')
+	file<<"******************************************************************************"<<endl<<endl;	
 	
+	if(choise=='a')
+	{
 		cout<<"[3] - ÇëÔÚÏÂÁÐµÈÊ½ºóÊäÈëÄãÈÏÎªÕýÈ·µÄ´ð°¸£º"<<endl<<endl;
+		
+		file<<"[3] - ÇëÔÚÏÂÁÐµÈÊ½ºóÊäÈëÄãÈÏÎªÕýÈ·µÄ´ð°¸£º"<<endl<<endl;
+	}
+	
+	
 
-	else if(choice=='b') 
-
+	else if(choise=='b') 
+	{
 		cout<<"[3] - Please enter the answer you think after the equation:"<<endl<<endl;
 		
+		file<<"[3] - Please enter the answer you think after the equation:"<<endl<<endl;
+	}
+	
+	file.close();
+
 }
 
 int randomNumber()
@@ -124,7 +178,7 @@ string randomOperation()
 	return sym;
 }
 
-string int_str(int n) 			//½«intÀàÐÍµÄÊý×Ö×ª»»Îª×Ö·ûÐÍ
+string Int_str(int n) 			//½«intÀàÐÍµÄÊý×Ö×ª»»Îª×Ö·ûÐÍ
 {         
 
 	char str[100];
@@ -136,6 +190,10 @@ string int_str(int n) 			//½«intÀàÐÍµÄÊý×Ö×ª»»Îª×Ö·ûÐÍ
 
 void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàÐÍ 
 {
+  fstream file;
+	
+  file.open("out.txt",ios::app);
+  
   int h=1,i,j;
 	
   for(;h<=n;h++)
@@ -161,9 +219,9 @@ void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàÐÍ
 	
 	for(int i=0;i<=2;i++)
 	{
-		num_1=int_str(number[i]);
+		num_1=Int_str(number[i]);
 		
-		num_2=int_str(number[i+1]);
+		num_2=Int_str(number[i+1]);
 		
 		int temp=rand()%2+1;
 		
@@ -198,16 +256,36 @@ void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàÐÍ
 		}
 	    }
 	}
+	string result = calculateResult(equation);
+	
 	cout<<"     The question"<<" [ "<<h<<" ] : "<<equation<<" = "; 
+	
+	file<<"     The question"<<" [ "<<h<<" ] : "<<equation<<" = ";
 	
 	cin>>answer;
 	
+	file<<answer;
+	
 	cout<<endl;
 	
-	string result = calculateResult(equation);
+	file<<endl;
 	
+	file.close();
+			
 	checkanswer(result,answer);
   }
+}
+
+
+void checkanswer(string res,string ans)
+{
+	if(Last==ans)  
+	
+	{
+		count++;
+	}
+	
+	//cout<<count; 
 }
 
 void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½ 
@@ -218,7 +296,7 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
     
 	while (i<infix.size())
     {
-        if ((infix[i]>='0')&&(infix[i]<='9'))      //ÅÐ¶ÏÊý×Ö 
+      	if ((infix[i]>='0')&&(infix[i]<='9'))      //ÅÐ¶ÏÊý×Ö 
         {
             while ((infix[i]>='0')&&(infix[i]<='9'))
 
@@ -233,11 +311,10 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 		if ((infix[i]=='+')||(infix[i]=='-')) //ÅÐ¶Ï'+'¡¢'-' 
         {
             
-            while (!sign.empty())
+            while (!sign.empty()&&(sign.top()!= '('))
             {
 
                 postfix[j]=sign.top();
-
                 j++;
                 sign.pop();
             
@@ -248,7 +325,7 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
         if (infix[i]=='*'||infix[i]=='/')   //ÅÐ¶Ï'*'¡¢'/' 
         {
             
-            while ((!sign.empty())&&((sign.top()=='*')||(sign.top()=='/')))
+            while ((!sign.empty())&&(sign.top()!= '(')&&((sign.top()=='*')||(sign.top()=='/')))
             {
                 postfix[j]=sign.top();
                 j++;
@@ -256,13 +333,12 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
             }
             sign.push(infix[i]);
         }
-        i++;
-    }
-    if (infix[i] == '(') 
+	  
+		if (infix[i] == '(') 
 	
 		sign.push(infix[i]); //ÅÐ¶Ï'(' 
-
-	if (infix[i] == ')') //ÅÐ¶Ï')' 
+	
+		if (infix[i] == ')') //ÅÐ¶Ï')' 
 
 		{
 
@@ -273,16 +349,17 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 				postfix[j] = sign.top();
 
 				j++;
-
+	
 				sign.pop();
 
 			}
 
 			sign.pop();
-
-		}
-
+		} 
+		
 		i++;
+	}
+		
    
     while(!sign.empty())    //×ª³ö·ûºÅÕ»ÖÐÊ£ÓàµÄÔËËã·û  
     {
@@ -295,8 +372,6 @@ void transform(string infix,char postfix[])     //ÖÐ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
     }
     postfix[j]='\0';     //²¹ÉÏÒ»¸öÖÕÖ¹·û 
 }
-
-
 
 int figure[100];  // ¿ªÒ»¸ö´æ·ÅÔËËã²Ù×÷µÄÊýÕ» 
 
@@ -336,53 +411,65 @@ string calculateResult(string infix)     //¼ÆËãºó×º±í´ïÊ½µÄÖµ ²¢ÇÒ ¼ÆËãÉú³ÉµÄÔËË
             
 			case '*':figure[point]=figure[point]*figure[point+1];break;
             
-			case '/':figure[point]=figure[point]/figure[point+1];break;
+			case '/':
+			{
+				/*if(figure[point]%figure[point+1]!=0)
+					while(figure[point]%figure[point+1]!=0)
+					{
+						figure[point+1]=1;//randomNumber();
+					}*/	
+				figure[point]=(figure[point]/figure[point+1]);break;
+			}	
         }
     }
     
 	i++;
     
 	}
+    fstream file;
+	
+	file.open(argv[2],ios::app);
     
-    last=int_str(figure[point]);
+    Last=Int_str(figure[point]);
     
-    //cout<<last;
+    cout<<Last;
     
-    return last;
+    file<<Last;
+    
+    file.close();
+    
+    return Last;
 }
 
-void checkanswer(string res,string ans)
+void print(int count)
 {
-	if(last==ans)  
+	fstream file;
 	
-	{
-		count++;
-	}
-	
-	//cout<<count; 
-}
-void print()
-{
+	file.open(argv[2],ios::app);
 		
 	cout<<"******************************************************************************"<<endl<<endl;	
 	
+	file<<"******************************************************************************"<<endl<<endl;
+	
 	cout<<"[4] - ÄúÕýÈ·»Ø´ðµÄÌâÊýÎª : "<<count<<endl<<endl;
 	
+	file<<"[4] - ÄúÕýÈ·»Ø´ðµÄÌâÊýÎª : "<<count<<endl<<endl;
+
 	cout<<"    - ÔÙ½ÓÔÙÀø£¬ÆÚ´ýÄãÏÂ´Î¸üºÃµÄ±íÏÖ£¡"<<endl<<endl; 
+	
+	file<<"    - ÔÙ½ÓÔÙÀø£¬ÆÚ´ýÄãÏÂ´Î¸üºÃµÄ±íÏÖ£¡"<<endl<<endl;
+	
+	file.close();
+	
 }
 
-int main()
-
+int main(int argc,char *argv[])
 {
-	
-	srand((unsigned)time(NULL));
-	
-	scan();    //¸Ãº¯ÊýÓÃÓÚÓëÓÃ»§½»»¥£¬»ñÈ¡ÊäÈëÊý¾Ý
-	 
+	srand((unsigned)time(NULL));		
+	choice();	
+	scan(n);    //¸Ãº¯ÊýÓÃÓÚÓëÓÃ»§½»»¥£¬»ñÈ¡ÊäÈëÊý¾Ý	 
 	generateExpression();   //ÓÃÓÚÉú³ÉÔËËãÊ½
-
-    print();    //½«Í³¼Æ½á¹ûÊä³ö¸øÓÃ»§
-    
+    print(count);    //½«Í³¼Æ½á¹ûÊä³ö¸øÓÃ»§	
 return 0;
 
 }
