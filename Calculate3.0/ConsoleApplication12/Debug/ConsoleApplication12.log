@@ -1,0 +1,6 @@
+﻿  scan.cpp
+  main.cpp
+c:\users\30309\documents\visual studio 2017\projects\consoleapplication12\consoleapplication12\main.cpp(36): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  ConsoleApplication12.vcxproj -> C:\Users\30309\Documents\Visual Studio 2017\Projects\ConsoleApplication12\Debug\ConsoleApplication12.exe
+  ConsoleApplication12.vcxproj -> C:\Users\30309\Documents\Visual Studio 2017\Projects\ConsoleApplication12\Debug\ConsoleApplication12.pdb (Partial PDB)
