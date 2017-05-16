@@ -15,7 +15,7 @@ fstream file1;
 
 string Last;
 
-string Int_str(int n) 			//½«intÀàĞÍµÄÊı×Ö×ª»»Îª×Ö·ûĞÍ
+string Int_str(int n) 			//å°†intç±»å‹çš„æ•°å­—è½¬æ¢ä¸ºå­—ç¬¦å‹
 {         
 
 	char str[100];
@@ -25,7 +25,7 @@ string Int_str(int n) 			//½«intÀàĞÍµÄÊı×Ö×ª»»Îª×Ö·ûĞÍ
 	return str;
 }
 
-void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½ 
+void transform(string infix,char postfix[])     //ä¸­ç¼€è¡¨è¾¾å¼è½¬ä¸ºåç¼€è¡¨è¾¾å¼ 
 {
     stack <char> sign;
     
@@ -33,7 +33,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
     
 	while (i<infix.size())
     {
-      	if ((infix[i]>='0')&&(infix[i]<='9'))      //ÅĞ¶ÏÊı×Ö 
+      	if ((infix[i]>='0')&&(infix[i]<='9'))      //åˆ¤æ–­æ•°å­— 
         {
             while ((infix[i]>='0')&&(infix[i]<='9'))
 
@@ -42,10 +42,10 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
                     i++;
                     j++;
             }
-            postfix[j]='!'; //±êÊ¶µ¥¸öÕûÊı£¬ÎªÁË²»Ê¹µÃÊı×Ö»ìÅÅÎŞ·¨Ò»Ò»Ê¶±ğ 
+            postfix[j]='!'; //æ ‡è¯†å•ä¸ªæ•´æ•°ï¼Œä¸ºäº†ä¸ä½¿å¾—æ•°å­—æ··æ’æ— æ³•ä¸€ä¸€è¯†åˆ« 
             j++;
         }
-		if ((infix[i]=='+')||(infix[i]=='-')) //ÅĞ¶Ï'+'¡¢'-' 
+		if ((infix[i]=='+')||(infix[i]=='-')) //åˆ¤æ–­'+'ã€'-' 
         {
             
             while (!sign.empty()&&(sign.top()!= '('))
@@ -59,7 +59,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
             sign.push(infix[i]);
 
         }
-        if (infix[i]=='*'||infix[i]=='/')   //ÅĞ¶Ï'*'¡¢'/' 
+        if (infix[i]=='*'||infix[i]=='/')   //åˆ¤æ–­'*'ã€'/' 
         {
             
             while ((!sign.empty())&&(sign.top()!= '(')&&((sign.top()=='*')||(sign.top()=='/')))
@@ -73,9 +73,9 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 	  
 		if (infix[i] == '(') 
 	
-		sign.push(infix[i]); //ÅĞ¶Ï'(' 
+		sign.push(infix[i]); //åˆ¤æ–­'(' 
 	
-		if (infix[i] == ')') //ÅĞ¶Ï')' 
+		if (infix[i] == ')') //åˆ¤æ–­')' 
 
 		{
 
@@ -98,7 +98,7 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
 	}
 		
    
-    while(!sign.empty())    //×ª³ö·ûºÅÕ»ÖĞÊ£ÓàµÄÔËËã·û  
+    while(!sign.empty())    //è½¬å‡ºç¬¦å·æ ˆä¸­å‰©ä½™çš„è¿ç®—ç¬¦  
     {
         
         postfix[j]=sign.top();
@@ -107,12 +107,12 @@ void transform(string infix,char postfix[])     //ÖĞ×º±í´ïÊ½×ªÎªºó×º±í´ïÊ½
         
 		sign.pop();
     }
-    postfix[j]='\0';     //²¹ÉÏÒ»¸öÖÕÖ¹·û 
+    postfix[j]='\0';     //è¡¥ä¸Šä¸€ä¸ªç»ˆæ­¢ç¬¦ 
 }
 
-int figure[100];  // ¿ªÒ»¸ö´æ·ÅÔËËã²Ù×÷µÄÊıÕ» 
+int figure[100];  // å¼€ä¸€ä¸ªå­˜æ”¾è¿ç®—æ“ä½œçš„æ•°æ ˆ 
 
-string calculateResult(string infix)     //¼ÆËãºó×º±í´ïÊ½µÄÖµ ²¢ÇÒ ¼ÆËãÉú³ÉµÄÔËËãÊ½µÄ½á¹û
+string calculateResult(string infix)     //è®¡ç®—åç¼€è¡¨è¾¾å¼çš„å€¼ å¹¶ä¸” è®¡ç®—ç”Ÿæˆçš„è¿ç®—å¼çš„ç»“æœ
 {
     int i=0,point=-1;
 
