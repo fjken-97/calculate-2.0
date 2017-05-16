@@ -13,7 +13,7 @@
 
 using namespace std;
 
-void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàĞÍ 
+void generateExpression()		//kä¸ºéšæœºé€‰å–é¢˜ç›®ç±»å‹ 
 {
   int h=1,i,j;
 	
@@ -28,12 +28,12 @@ void generateExpression()		//kÎªËæ»úÑ¡È¡ÌâÄ¿ÀàĞÍ
 	
 	for(i=0;i<=3;i++)
 	{
-		number[i]=randomNumber();		//ÓÃÓÚËæ»úÉú³ÉÊı×Ö
+		number[i]=randomNumber();		//ç”¨äºéšæœºç”Ÿæˆæ•°å­—
 	}
 	
 	for(j=0;j<=2;j++)
 	{
-		sign[j]=randomOperation();		//ÓÃÓÚËæ»úÉú³ÉÔËËã·û
+		sign[j]=randomOperation();		//ç”¨äºéšæœºç”Ÿæˆè¿ç®—ç¬¦
 	} 
 	
 	equation="";
