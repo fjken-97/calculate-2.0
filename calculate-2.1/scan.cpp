@@ -15,21 +15,21 @@ void choice()
 	
 	file1<<"******************************************************************************"<<endl<<endl;
 	
-	cout<<"      ½ñÌìÄãË¢ÌâÁËÂð£¿¸Ï¿ì¶¯¶¯ÄãµÄÐ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl; 
+	cout<<"      ä»Šå¤©ä½ åˆ·é¢˜äº†å—ï¼Ÿèµ¶å¿«åŠ¨åŠ¨ä½ çš„å°æ‰‹ï¼Œç†Ÿç»ƒä¸€ä¸‹å§ï¼    "<<endl<<endl; 
 	
-	file1<<"      ½ñÌìÄãË¢ÌâÁËÂð£¿¸Ï¿ì¶¯¶¯ÄãµÄÐ¡ÊÖ£¬ÊìÁ·Ò»ÏÂ°É£¡    "<<endl<<endl;
+	file1<<"      ä»Šå¤©ä½ åˆ·é¢˜äº†å—ï¼Ÿèµ¶å¿«åŠ¨åŠ¨ä½ çš„å°æ‰‹ï¼Œç†Ÿç»ƒä¸€ä¸‹å§ï¼    "<<endl<<endl;
 	
 	cout<<"******************************************************************************"<<endl<<endl;
 	
 	file1<<"******************************************************************************"<<endl<<endl;
 	
-	cout<<"[1] - ÇëÑ¡ÔñÄãËùÐèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
+	cout<<"[1] - è¯·é€‰æ‹©ä½ æ‰€éœ€è¦çš„è¯­è¨€ ( Please choose the language that you need ) :"<<endl<<endl;
 	
-	file1<<"[1] - ÇëÑ¡ÔñÄãËùÐèÒªµÄÓïÑÔ ( Please choose the language that you need ) :"<<endl<<endl;
+	file1<<"[1] - è¯·é€‰æ‹©ä½ æ‰€éœ€è¦çš„è¯­è¨€ ( Please choose the language that you need ) :"<<endl<<endl;
 	
-	cout<<"      a.¼òÌåÖÐÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;          //ÊµÏÖ2ÖÖÓïÑÔµÄÇÐ»»     
+	cout<<"      a.ç®€ä½“ä¸­æ–‡ ;  b.è‹±æ–‡ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;          //å®žçŽ°2ç§è¯­è¨€çš„åˆ‡æ¢     
 	
-	file1<<"      a.¼òÌåÖÐÎÄ ;  b.Ó¢ÎÄ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;    
+	file1<<"      a.ç®€ä½“ä¸­æ–‡ ;  b.è‹±æ–‡ ( a.Simplified Chinese ; b.English ) "<<endl<<endl;    
 	
 	int i;
 
@@ -57,8 +57,8 @@ void choice()
 		if(choise=='a')
 
 	        {
-				cout<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êý(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌÐò)£º"<<endl<<endl;
-				file1<<"[2] - ÇëÊäÈëÄãËùÏëÒªµÄÌâÄ¿Êý(Äã¿ÉÒÔÊäÈë'e'Ôò½áÊø³ÌÐò)£º"<<endl<<endl;
+				cout<<"[2] - è¯·è¾“å…¥ä½ æ‰€æƒ³è¦çš„é¢˜ç›®æ•°(ä½ å¯ä»¥è¾“å…¥'e'åˆ™ç»“æŸç¨‹åº)ï¼š"<<endl<<endl;
+				file1<<"[2] - è¯·è¾“å…¥ä½ æ‰€æƒ³è¦çš„é¢˜ç›®æ•°(ä½ å¯ä»¥è¾“å…¥'e'åˆ™ç»“æŸç¨‹åº)ï¼š"<<endl<<endl;
 				break;
 			}
 
@@ -73,8 +73,8 @@ void choice()
 		else
 
 		    {
-				cout<<"[2] - ÊäÈë²»µ±£¬ÇëÖØÐÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
-				file1<<"[2] - ÊäÈë²»µ±£¬ÇëÖØÐÂÑ¡ÔñÑ¡Ïî/Please select the option again if it is wrong"<<endl<<endl;
+				cout<<"[2] - è¾“å…¥ä¸å½“ï¼Œè¯·é‡æ–°é€‰æ‹©é€‰é¡¹/Please select the option again if it is wrong"<<endl<<endl;
+				file1<<"[2] - è¾“å…¥ä¸å½“ï¼Œè¯·é‡æ–°é€‰æ‹©é€‰é¡¹/Please select the option again if it is wrong"<<endl<<endl;
 				continue;
 			}
 		    
@@ -99,9 +99,9 @@ void scan(int n)
 	
 	if(choise=='a')
 	{
-		cout<<"[3] - ÇëÔÚÏÂÁÐµÈÊ½ºóÊäÈëÄãÈÏÎªÕýÈ·µÄ´ð°¸£º"<<endl<<endl;
+		cout<<"[3] - è¯·åœ¨ä¸‹åˆ—ç­‰å¼åŽè¾“å…¥ä½ è®¤ä¸ºæ­£ç¡®çš„ç­”æ¡ˆï¼š"<<endl<<endl;
 		
-		file1<<"[3] - ÇëÔÚÏÂÁÐµÈÊ½ºóÊäÈëÄãÈÏÎªÕýÈ·µÄ´ð°¸£º"<<endl<<endl;
+		file1<<"[3] - è¯·åœ¨ä¸‹åˆ—ç­‰å¼åŽè¾“å…¥ä½ è®¤ä¸ºæ­£ç¡®çš„ç­”æ¡ˆï¼š"<<endl<<endl;
 	}
 	
 	
