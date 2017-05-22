@@ -1,0 +1,6 @@
+﻿[2] - Bitte geben sie wollen (geben sie den titel "e" am Programm)：
+[3] - Bitte geben sie die folgenden gleichungen nach, dass sie die richtige antwort ：
+      Die antwort IST richtig. "Weiterhin yo！
+      Falsche antwort!Sorglos Yo, die richtige antwort ist：
+[4] - Ihre Zahl richtig beantworten, DEM für die: 
+    - MIT Blick auf die nächste Aufgabe, bessere Leistungen！

@@ -7,44 +7,49 @@
 #include <string>
 using namespace std;
 
+char boundary[10][100];
+
 int main(int argc, char *argv[])
 {
 	srand((unsigned)time(NULL));
-	// Choice lan;
+	LanguageChoice lang;
 	double answer,result;
 	char ch;
 	int count = 0;
 	string Equation;
 	Title();
-	ch = choice();
-	// cin >> c;
-	// lan.set(c);
-	// lan.ReadFile();
+	cout << "    - ";
+	cin >> ch;
+	memset(boundary, '\0', 100);
+	lang.languageset(boundary,ch);
+	cout << "******************************************************************************" << endl << endl;
+	cout << boundary[0] << endl << endl;
 	int n, h = 0;
 	cout << "    - ";
 	cin >> n; 
-	Scan(ch);
-	// lan.ReadFile();
+	cout << endl;
+	cout << boundary[1] << endl << endl;
 	Expression exp;
 	for (;h < n ; h++)
 	{
-		cout << "     The question" << " [ " << h << " ] : " << exp.generateExpression() << " = ";
+		cout <<"      The question" << " [ " << h << " ] : " << exp.generateExpression() << " = ";
 		result = calculateResult(exp.show());
-		//cout << result << endl;
 		cin >> answer;
 		cout << endl;
 		if(checkanswer(result, answer))
 		{
 			count++;
-			cout << "     回答正确！继续保持哟！" << endl;
+			cout << boundary[2] << endl;
 		}
 		else
 		{
-			cout << "     回答错误！粗心了哟，正确答案是：" << result << endl;
+			cout << boundary[3] << result << endl;
 		}
-		// lan.ReadFile();
 		cout << endl;
 	}
-	print(count);   	
+	cout << "******************************************************************************" << endl << endl;
+	cout << boundary[4] << count << endl << endl;
+	cout << boundary[5] << endl << endl;
+	exit(0);
 	return 0;
 }

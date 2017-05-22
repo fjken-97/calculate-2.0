@@ -1,8 +1,7 @@
-******************************************************************************
 [2] - Please enter the number of texts you want(You can enter'e'to end the program): 
-******************************************************************************
 [3] - Please enter the answer you think after the equation : 
-******************************************************************************
+      Your answer is correct£¡Keep up the good work£¡
+      Your answer is wrong£¡So careless! The correct answer is:
 [4] - The number of questions you answered correctly is : 
     - Again, looking forward to the next better performance !
 

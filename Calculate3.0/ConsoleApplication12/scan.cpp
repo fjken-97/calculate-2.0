@@ -1,7 +1,48 @@
 
 #include"scan.h"
 #include <iostream>
+#include<cstring>
+#include <fstream>
 using namespace std;
+
+void Title()
+{
+	cout << "******************************************************************************" << endl << endl;
+	cout << "      今天你刷题了吗？快动动你的小手，熟练一下吧！    " << endl << endl;
+	cout << "******************************************************************************" << endl << endl;
+	cout << " [1] - 请选择你所需要的语言 ( Please choose the language that you need ) :" << endl << endl;
+	cout << "      a.简体中文 ;  b.英文 ( a.Simplified Chinese ; b.English ) " << endl << endl;
+	cout << "      c.日本       ;  d.德语 ( c.Japanese           ; d.German  ) " << endl << endl;
+}
+
+void LanguageChoice::languageset(char boundary[10][100],char choice)
+{
+	switch (choice)
+	{
+	case 'a':strcat(path, "Simplified Chinese");break;
+	case 'b':strcat(path, "English");break;
+	case 'c':strcat(path, "Japanese");break;
+	case 'd':strcat(path, "German");break;
+	}
+	strcat(path, ".txt");	
+	fstream file;
+	file.open(path, ios::in);
+	if (file.is_open())
+	{
+		int i;
+		for (i = 0;file.getline(boundary[i], 100);i++)
+		{
+		}
+		file.close();
+	}
+	else
+	{
+		cout << endl;
+		cout << "    - 输入不当，请重新选择选项 / Please select the option again if it is wrong" << endl << endl;
+		memset(path, '\0', 10);
+	}
+}
+
 
 /* void Choice::set(char ch)
 {
@@ -36,20 +77,7 @@ void Choice::ReadFile()
 	default:
 		break;
 	}
-} */
-
-void print(double sum)
-{
-	cout << "******************************************************************************" << endl << endl;
-
-
-	cout << "[4] - 您正确回答的题数为 : " << sum << endl << endl;
-
-
-	cout << "    - 再接再励，期待你下次更好的表现！" << endl << endl;
-
-}
-
+} 
 char choice()
 
 {
@@ -91,13 +119,4 @@ void Scan(char choise)
 	{
 		cout << "[3] - Please enter the answer you think after the equation:" << endl << endl;
 	}
-}
-
-void Title()
-{
-	cout << "******************************************************************************" << endl << endl;
-	cout << "      今天你刷题了吗？快动动你的小手，熟练一下吧！    " << endl << endl;
-	cout << "******************************************************************************" << endl << endl;
-	cout << "[1] - 请选择你所需要的语言 ( Please choose the language that you need ) :" << endl << endl;
-	cout << "      a.简体中文 ;  b.英文 ( a.Simplified Chinese ; b.English ) " << endl << endl;
-}
+}*/
