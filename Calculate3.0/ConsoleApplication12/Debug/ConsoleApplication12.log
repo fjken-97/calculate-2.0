@@ -1,4 +1,0 @@
-﻿  main.cpp
-c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\main.cpp(39): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-  ConsoleApplication12.vcxproj -> C:\Users\30309\Desktop\小豪的gg\Calculate3.0\Debug\ConsoleApplication12.exe
-  ConsoleApplication12.vcxproj -> C:\Users\30309\Desktop\小豪的gg\Calculate3.0\Debug\ConsoleApplication12.pdb (Partial PDB)

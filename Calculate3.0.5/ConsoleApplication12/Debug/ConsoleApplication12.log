@@ -1,0 +1,24 @@
+﻿  scan.cpp
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\scan.cpp(22): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\scan.cpp(23): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\scan.cpp(24): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\scan.cpp(25): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\scan.cpp(27): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+  Expression.cpp
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\expression.cpp(165): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdlib.h(1334): note: 参见“itoa”的声明
+  正在生成代码...
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\expression.h(56): warning C4715: “RandomFactory::creatRandom”: 不是所有的控件路径都返回值
+  正在编译...
+  main.cpp
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\main.cpp(39): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  calculate.cpp
+c:\users\30309\desktop\小豪的gg\calculate3.0\consoleapplication12\calculate.cpp(11): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  ConsoleApplication12.vcxproj -> C:\Users\30309\Desktop\小豪的gg\Calculate3.0\Debug\ConsoleApplication12.exe
+  ConsoleApplication12.vcxproj -> C:\Users\30309\Desktop\小豪的gg\Calculate3.0\Debug\ConsoleApplication12.pdb (Partial PDB)
