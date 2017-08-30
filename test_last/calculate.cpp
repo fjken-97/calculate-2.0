@@ -1,9 +1,10 @@
 #include "calculate.h"
 #include "ui_calculate.h"
+#include <QMessageBox>
 
-calculate::calculate(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::calculate)
+
+
+calculate::calculate(QWidget *parent) : QMainWindow(parent), ui(new Ui::calculate)
 {
     ui->setupUi(this);
     QObject::connect(ui->calButton_2,SIGNAL(clicked()),this,SLOT(calSlot()));
